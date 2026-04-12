@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("data/recipes.json")
+  fetch("../data/recipes.json")
     .then((response) => response.json())
     .then((recipes) => {
       const recipeList = document.getElementById("recipe-list");
@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
       recipes.forEach((recipe) => {
         const item = document.createElement("a");
         item.className = "recipe-item";
-        item.href = recipe.link;
+        item.href = `../${recipe.link}`;
 
         item.innerHTML = `
-          <img class="recipe-thumb" src="${recipe.image}" alt="${recipe.title}">
+          <img class="recipe-thumb" src="../${recipe.image}" alt="${recipe.title}">
           <div class="recipe-meta">
             <div class="recipe-title">${recipe.title}</div>
             <div class="recipe-subtitle">${recipe.subtitle || ""}</div>
