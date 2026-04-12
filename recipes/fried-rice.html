@@ -3,64 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Air Fryer Chicken Thighs</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-<body>
-  <main class="main-content">
-    <div class="recipe-page">
-      <a class="back-link" href="../index.html">← Back to recipes</a>
-
-      <h1>Fried Rice</h1>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fried Rice</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  <main class="main-content">
-    <div class="recipe-page">
-      <a class="back-link" href="../index.html">← Back to recipes</a>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h1 class="site-title">RECIPES</h1>
 
-      <h1>Fried Rice</h1>
+        <div class="top-buttons">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            🌙
+          </button>
 
-      <img
-        class="hero-image"
-        src="../assets/images/fried-rice.jpg"
-        alt="Fried Rice"
-      />
+          <button
+            id="sidebarToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Collapse sidebar"
+            title="Collapse sidebar"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
 
-      <section class="recipe-section">
-        <h2>Ingredients</h2>
-        <ul>
-          <li>Protein of choice</li>
-          <li>Coconut oil</li>
-          <li>Salt</li>
-          <li>Pepper</li>
-          <li>Minced garlic or powdered</li>
-          <li>Basil</li>
-          <li>Oyster sauce</li>
-          <li>Soy sauce</li>
-          <li>Eggs</li>
-          <li>Pineapple (optional)</li>
-        </ul>
-      </section>
+      <div class="sidebar-controls">
+        <button id="homeButton" class="control-btn" type="button">
+          Home
+        </button>
+      </div>
 
-      <section class="recipe-section">
-        <h2>Instructions</h2>
-        <ol>
-          <li>Fry eggs in coconut oil with sprinkle of salt. Set aside.</li>
-          <li>If applicable, stir fry your protein until cooked.</li>
-          <li>Add day old or dried rice into pan, add seasonings (soy sauce, oyster sauce, garlic, etc.)</li>
-          <li>Add back in the eggs, protein, and chopped basil.</li>
-        </ol>
-      </section>
-    </div>
-  </main>
+      <div id="recipe-list" class="recipe-list"></div>
+    </aside>
+
+    <main class="main-content">
+      <div class="recipe-page">
+        <h1>Fried Rice</h1>
+
+        <img
+          class="hero-image"
+          src="../assets/images/fried-rice.jpeg"
+          alt="Fried Rice"
+        />
+
+        <section class="recipe-section">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Rice</li>
+            <li>Coconut oil</li>
+            <li>Protein of choice</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+            <li>Minced or powdered garlic</li>
+            <li>Soy sauce</li>
+            <li>Oyster sauce</li>
+            <li>Basil</li>
+            <li>Pineapple (optional)</li>
+          </ul>
+        </section>
+
+        <section class="recipe-section">
+          <h2>Instructions</h2>
+          <ol>
+            <li>Preheat the air fryer to 375°F.</li>
+            <li>Pat the chicken dry and coat lightly with oil.</li>
+            <li>Season all sides evenly.</li>
+            <li>Cook for 18 to 22 minutes, flipping halfway through.</li>
+            <li>Check that the internal temperature reaches 165°F.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+  </div>
 
   <script src="../assets/js/theme.js"></script>
   <script src="../assets/js/recipes-subpage.js"></script>

@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const recipeList = document.getElementById("recipe-list");
       if (!recipeList) return;
 
+      recipeList.innerHTML = "";
+
       recipes.forEach((recipe) => {
         const item = document.createElement("a");
         item.className = "recipe-item";

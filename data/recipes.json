@@ -2,13 +2,13 @@
   {
     "title": "Fried Rice",
     "subtitle": "Meal",
-    "image": "assets/images/fried-rice.jpg",
+    "image": "assets/images/fried-rice.jpeg",
     "link": "recipes/fried-rice.html"
   },
   {
     "title": "Temp",
     "subtitle": "Temp",
-    "image": "assets/images/temp.jpg",
+    "image": "assets/images/temp.jpeg",
     "link": "recipes/temp.html"
   }
 ]
