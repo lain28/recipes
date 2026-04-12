@@ -1,20 +1,14 @@
 [
   {
-    "title": "Air Fryer Chicken Thighs",
-    "subtitle": "Air Fryer",
-    "image": "assets/images/air-fryer-chicken-thighs.jpg",
-    "link": "recipes/air-fryer-chicken-thighs.html"
+    "title": "Fried Rice",
+    "subtitle": "Meal",
+    "image": "assets/images/fried-rice.jpg",
+    "link": "recipes/fried-rice.html"
   },
   {
-    "title": "Garlic Butter Salmon",
-    "subtitle": "Seafood",
-    "image": "assets/images/garlic-butter-salmon.jpg",
-    "link": "recipes/garlic-butter-salmon.html"
-  },
-  {
-    "title": "Homemade Pasta",
-    "subtitle": "Italian",
-    "image": "assets/images/homemade-pasta.jpg",
-    "link": "recipes/homemade-pasta.html"
+    "title": "Temp",
+    "subtitle": "Temp",
+    "image": "assets/images/temp.jpg",
+    "link": "recipes/temp.html"
   }
 ]
