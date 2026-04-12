@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f7f7f8;
+  --panel: #ffffff;
+  --panel-2: #fafafa;
+  --text: #111111;
+  --muted: #666666;
+  --border: #e5e5e5;
+  --hover: #f0f0f0;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --button-bg: #ffffff;
+  --button-text: #111111;
+  --button-border: #d9d9d9;
+}
+
+body.dark {
+  --bg: #1a1a1a;
+  --panel: #202123;
+  --panel-2: #2a2b2f;
+  --text: #f3f3f3;
+  --muted: #b5b5b5;
+  --border: #3a3a3a;
+  --hover: #343541;
+  --shadow: rgba(0, 0, 0, 0.28);
+  --button-bg: #2f3035;
+  --button-text: #f3f3f3;
+  --button-border: #4a4a4a;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 330px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 16px;
+  transition: width 0.2s ease, padding 0.2s ease;
+}
+
+.sidebar.collapsed {
+  width: 88px;
+}
+
+.sidebar.collapsed .site-title,
+.sidebar.collapsed .control-btn,
+.sidebar.collapsed .recipe-meta {
+  display: none;
+}
+
+.sidebar.collapsed .recipe-item {
+  justify-content: center;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sidebar-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.control-btn,
+.icon-btn {
+  border: 1px solid var(--button-border);
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.control-btn {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+}
+
+.control-btn:hover,
+.icon-btn:hover {
+  transform: scale(1.03);
+  background: var(--hover);
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+.active-btn {
+  font-weight: 700;
+}
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px;
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.recipe-item:hover {
+  transform: scale(1.03);
+  background: var(--hover);
+  box-shadow: 0 8px 18px var(--shadow);
+}
+
+.recipe-thumb {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.recipe-item:hover .recipe-thumb {
+  transform: scale(1.14);
+}
+
+.recipe-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.recipe-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.recipe-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+  background: var(--bg);
+}
+
+.home-hero {
+  max-width: 800px;
+}
+
+.home-hero h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.recipe-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.recipe-page h1 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 18px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.recipe-section {
+  margin-bottom: 28px;
+}
+
+.recipe-section h2 {
+  margin-bottom: 12px;
+}
+
+.recipe-section ul,
+.recipe-section ol {
+  padding-left: 22px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}

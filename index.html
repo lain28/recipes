@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Recipes</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h1 class="site-title">My Recipes</h1>
+
+        <button id="sidebarToggle" class="icon-btn" type="button" aria-label="Collapse sidebar">
+          ☰
+        </button>
+      </div>
+
+      <div class="sidebar-controls">
+        <button id="homeButton" class="control-btn active-btn" type="button">
+          Home
+        </button>
+
+        <button id="themeToggle" class="control-btn" type="button">
+          Toggle Dark Mode
+        </button>
+      </div>
+
+      <div id="recipe-list" class="recipe-list"></div>
+    </aside>
+
+    <main class="main-content" id="mainContent">
+      <section class="home-hero" id="homeSection">
+        <h2>Welcome</h2>
+        <p>Select a recipe from the sidebar.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/recipes.js"></script>
+</body>
+</html>
