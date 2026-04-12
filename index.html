@@ -3,36 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Recipes</title>
+  <title>YUM YUM COOKBOOK</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <div class="app">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-top">
-        <h1 class="site-title">My Recipes</h1>
+        <h1 class="site-title">RECIPES</h1>
 
-        <button id="sidebarToggle" class="icon-btn" type="button" aria-label="Collapse sidebar">
-          ☰
-        </button>
+        <div class="top-buttons">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            🌙
+          </button>
+
+          <button
+            id="sidebarToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Collapse sidebar"
+            title="Collapse sidebar"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
       <div class="sidebar-controls">
         <button id="homeButton" class="control-btn active-btn" type="button">
           Home
         </button>
-
-        <button id="themeToggle" class="control-btn" type="button">
-          Toggle Dark Mode
-        </button>
       </div>
 
       <div id="recipe-list" class="recipe-list"></div>
     </aside>
 
-    <main class="main-content" id="mainContent">
-      <section class="home-hero" id="homeSection">
-        <h2>Welcome</h2>
+    <main class="main-content">
+      <section class="home-hero">
+        <h2>WELCOME.</h2>
         <p>Select a recipe from the sidebar.</p>
       </section>
     </main>
