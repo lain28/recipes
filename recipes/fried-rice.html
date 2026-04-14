@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fried Rice</title>
+  <title>YUM</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
@@ -39,11 +39,28 @@
         <button id="homeButton" class="control-btn" type="button">
           Home
         </button>
+
+        <button id="categoriesToggle" class="control-btn" type="button">
+          Categories ▾
+        </button>
+
+        <div id="categoryMenu" class="category-menu hidden">
+          <button class="control-btn category-btn" type="button" data-category="All">
+            All
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Meal">
+            Meal
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Bakery">
+            Bakery
+          </button>
+        </div>
       </div>
 
       <div id="recipe-list" class="recipe-list"></div>
     </aside>
 
+    <!-- START EDITING HERE -->
     <main class="main-content">
       <div class="recipe-page">
         <h1>Fried Rice</h1>
@@ -73,11 +90,12 @@
         <section class="recipe-section">
           <h2>Instructions</h2>
           <ol>
-            <li>Preheat the air fryer to 375°F.</li>
-            <li>Pat the chicken dry and coat lightly with oil.</li>
-            <li>Season all sides evenly.</li>
-            <li>Cook for 18 to 22 minutes, flipping halfway through.</li>
-            <li>Check that the internal temperature reaches 165°F.</li>
+            <li>Cook protein and eggs in coconut oil. Set aside.</li>
+            <li>Fry the rice and add seasonings to taste.</li>
+            <li>If including pineapple, then precook w/ proteins and eggs.</li>
+            <li>Add back protein, eggs, and basil when rice is warmed through.</li>
+            <li>Taste.</li>
+            <li>If good it's done.</li>
           </ol>
         </section>
       </div>

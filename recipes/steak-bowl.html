@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YUM</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h1 class="site-title">RECIPES</h1>
+
+        <div class="top-buttons">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            🌙
+          </button>
+
+          <button
+            id="sidebarToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Collapse sidebar"
+            title="Collapse sidebar"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-controls">
+        <button id="homeButton" class="control-btn" type="button">
+          Home
+        </button>
+
+        <button id="categoriesToggle" class="control-btn" type="button">
+          Categories ▾
+        </button>
+
+        <div id="categoryMenu" class="category-menu hidden">
+          <button class="control-btn category-btn" type="button" data-category="All">
+            All
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Meal">
+            Meal
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Bakery">
+            Bakery
+          </button>
+        </div>
+      </div>
+
+      <div id="recipe-list" class="recipe-list"></div>
+    </aside>
+
+    <!-- START EDITING HERE -->
+    <main class="main-content">
+      <div class="recipe-page">
+        <h1>Steak Bowl どん</h1>
+
+        <img
+          class="hero-image"
+          src="../assets/images/steak-bowl.jpeg"
+          alt="Steak Bowl"
+        />
+
+        <section class="recipe-section">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Steak (e.g. ribeye, new york strip, whatever).</li>
+            <li>Large onions</li>
+            <li>Soy sauce</li>
+						<li>Water</li>
+            <li>Sugar</li>
+						<li>Rice wine or mirin</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+            <li>Vegetables of choice (e.g. greens, mushrooms, whatever).</li>
+            <li>Egg</li>
+          </ul>
+        </section>
+
+        <section class="recipe-section">
+          <h2>Instructions</h2>
+          <ol>
+            <li>Grill steaks like any other steak (w/ salt, pepper).</li>
+            <li>Slice onions and brown in small pot w/ olive oil.</li>
+            <li>When onions are soft, add equal parts soy sauce and water (~2 cups each).</li>
+            <li>Add good amount of sugar to sauce (~0.33 cups). Taste.</li>
+            <li>Add splash of mirin or rice wine, let simmer for ~5 min to cook out alcohol.</li>
+            <li>Poach eggs (usually one egg per person).</li>
+            <li>Cook vegetables any way you want.</li>
+            <li>Assemble your bowl.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/recipes-subpage.js"></script>
+</body>
+</html>

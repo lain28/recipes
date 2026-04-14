@@ -2,13 +2,32 @@
   {
     "title": "Fried Rice",
     "subtitle": "Meal",
+    "category": "Meal",
     "image": "assets/images/fried-rice.jpeg",
     "link": "recipes/fried-rice.html"
   },
+
   {
-    "title": "Temp",
-    "subtitle": "Temp",
-    "image": "assets/images/temp.jpeg",
-    "link": "recipes/temp.html"
+    "title": "Gelatin Cornbread",
+    "subtitle": "Bakery",
+    "category": "Bakery",
+    "image": "assets/images/gelatin-cornbread.jpeg",
+    "link": "recipes/gelatin-cornbread.html"
+  },
+
+  {
+    "title": "Chili Beef",
+    "subtitle": "Meal",
+    "category": "Meal",
+    "image": "assets/images/chili-beef.jpeg",
+    "link": "recipes/chili-beef.html"
+  },
+
+  {
+    "title": "Steak Bowl",
+    "subtitle": "Meal",
+    "category": "Meal",
+    "image": "assets/images/steak-bowl.jpeg",
+    "link": "recipes/steak-bowl.html"
   }
 ]

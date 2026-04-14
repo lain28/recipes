@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YUM YUM</title>
+  <title>YUM</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -39,6 +39,22 @@
         <button id="homeButton" class="control-btn active-btn" type="button">
           Home
         </button>
+
+        <button id="categoriesToggle" class="control-btn" type="button">
+          Categories ▾
+        </button>
+
+        <div id="categoryMenu" class="category-menu hidden">
+          <button class="control-btn category-btn" type="button" data-category="All">
+            All
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Meal">
+            Meal
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Bakery">
+            Bakery
+          </button>
+        </div>
       </div>
 
       <div id="recipe-list" class="recipe-list"></div>

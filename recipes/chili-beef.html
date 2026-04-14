@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YUM</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h1 class="site-title">RECIPES</h1>
+
+        <div class="top-buttons">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            🌙
+          </button>
+
+          <button
+            id="sidebarToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Collapse sidebar"
+            title="Collapse sidebar"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-controls">
+        <button id="homeButton" class="control-btn" type="button">
+          Home
+        </button>
+
+        <button id="categoriesToggle" class="control-btn" type="button">
+          Categories ▾
+        </button>
+
+        <div id="categoryMenu" class="category-menu hidden">
+          <button class="control-btn category-btn" type="button" data-category="All">
+            All
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Meal">
+            Meal
+          </button>
+          <button class="control-btn category-btn" type="button" data-category="Bakery">
+            Bakery
+          </button>
+        </div>
+      </div>
+
+      <div id="recipe-list" class="recipe-list"></div>
+    </aside>
+
+    <!-- START EDITING HERE -->
+    <main class="main-content">
+      <div class="recipe-page">
+        <h1>Chili Beef (Burmese)</h1>
+
+        <img
+          class="hero-image"
+          src="../assets/images/chili-beef.jpeg"
+          alt="Chili Beef"
+        />
+
+        <section class="recipe-section">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Beef chunks or slices</li>
+            <li>Garlic (minced or powdered)</li>
+            <li>Ginger (minced or powdered)</li>
+            <li>Large onion</li>
+            <li>Basil</li>
+            <li>Jalapenos</li>
+						<li>Chiliflakes (as needed)</li>
+						<li>Cumin (A LOT)</li>
+						<li>Soy sauce</li>
+						<li>Salt</li>
+						<li>Pepper</li>
+						<li>Sugar</li>
+						<li>Cornstarch</li>
+						<li>Oil (coconut & olive)</li>
+						<li>Bell peppers (optional)</li>
+          </ul>
+        </section>
+
+        <section class="recipe-section">
+          <h2>Instructions</h2>
+          <ol>
+            <li>Marinate beef in soy sauce, salt, pepper, cumin, garlic, ginger, sugar, cornstarch, and olive oil (all eyeballed) for however long.</li>
+            <li>Stir fry onion in coconut oil until browned. Then turn up heat.</li>
+            <li>Add in marinated beef and stir fry until browned.</li>
+            <li>When browned but not cooked all the way through, add sliced jalapenos and bell peppers if applicable.</li>
+            <li>Mix and let simmer. Towards end of the simmering cycle add in the basil.</li>
+            <li>If the spice from jalapenos is not enough, add in chiliflakes.</li>
+						<li>Taste. If good then good. If needs more seasoning, add it and simmer another 5 min or so.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/recipes-subpage.js"></script>
+</body>
+</html>
