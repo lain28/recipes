@@ -239,11 +239,11 @@ body {
 }
 
 .hero-image {
-  width: 100%;
-  max-width: 700px;
+  width: 80%;
+  max-width: 500px;
   border-radius: 18px;
   display: block;
-  margin-bottom: 0 auto 24px auto;
+  margin: auto;
 }
 
 .recipe-section {
